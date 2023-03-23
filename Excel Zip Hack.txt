@@ -1,0 +1,16 @@
+Step 1: Change the Excel file name extension from xlsx to zip.
+
+Step 2: When the Excel file is changed into a ZIP file, double click on the ZIP file to open it.
+Then open xl -> worksheets.
+Then you can see three .XML files in the "worksheets" folder.
+
+Step 3(Worksheet): Drag the "sheet1.xml" file into any one folder.
+Right click on the "sheet1.xml" file and select Open with -> Notepad.
+Step 3(workbook): Navigate to xl and right click on workbook.xml and choose "Edit"
+
+Step 4: Find the sheetProtection tag and remove it. Protection was removed from the Excel sheet.
+exp:-
+<sheetProtection password="password" sheet="1" objects"1" scenario="1"/>
+<workbookProtection workbookPassword="93AF" lockStructure="1" lockWindows="1"/>
+
+Step 5: Save and paste back to zip file
